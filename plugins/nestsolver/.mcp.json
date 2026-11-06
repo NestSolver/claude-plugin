@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "nestsolver": {
+      "type": "http",
+      "url": "https://mcp.nestsolver.com"
+    }
+  }
+}

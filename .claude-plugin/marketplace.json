@@ -1,0 +1,12 @@
+{
+  "name": "nestsolver",
+  "description": "NestSolver's plugin: plan cut lists, true-shape nests and pallet and truck loads.",
+  "owner": { "name": "NestSolver", "email": "support@nestsolver.com" },
+  "plugins": [
+    {
+      "name": "nestsolver",
+      "source": "./plugins/nestsolver",
+      "description": "Plan cut lists, true-shape nests and pallet and truck loads with NestSolver."
+    }
+  ]
+}
