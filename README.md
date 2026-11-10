@@ -8,9 +8,9 @@ to use NestSolver's tools well:
   and for sheets of plywood, MDF, metal, glass or acrylic, for a panel saw
   or a CNC router: which parts come from each bar or sheet, the cut order,
   the offcuts worth keeping and the waste.
-- **nest-parts**: true-shape nesting of parts saved from DXF, DWG or SVG
-  drawings, with spacing, rotation and common-line cutting, and links to
-  the plan's cutter files.
+- **nest-parts**: true-shape nesting of parts from DXF, DWG or SVG
+  drawings, shared in the chat or saved before, with spacing, rotation and
+  common-line cutting, and links to the plan's cutter files.
 - **plan-load**: cartons on pallets and pallets in trucks and containers,
   with stacking rules, the centre of gravity, loading steps, and axle loads
   checked against US Interstate or EU road rules.
@@ -38,8 +38,8 @@ Then run `/mcp`, choose `nestsolver`, and sign in.
 ## What it needs
 
 A NestSolver account. Connecting asks you to sign in and pick a workspace;
-there is no key to copy. Linear and sheet cut lists and 5 loads a month
-work on the Free plan.
+there is no key to copy. Linear and sheet cut lists, 5 nests (up to 50
+parts each) and 5 loads a month work on the Free plan.
 
 NestSolver sees only the cut lists, parts and cargo sent through its tools,
 never your conversation.

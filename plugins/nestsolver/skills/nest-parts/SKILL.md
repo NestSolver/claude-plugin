@@ -1,6 +1,6 @@
 ---
 name: nest-parts
-description: Nests irregular parts on sheets with NestSolver (true-shape nesting), using parts saved from DXF, DWG or SVG drawings plus rectangles and circles, with part spacing, rotation and common-line cutting, for laser, plasma, waterjet, router or knife cutting. Use when someone wants to nest parts, fit shapes on sheet metal or other sheets, or asks how many sheets their parts need.
+description: Nests irregular parts on sheets with NestSolver (true-shape nesting), using parts from DXF, DWG or SVG drawings (shared in the chat or saved before) plus rectangles and circles, with part spacing, rotation and common-line cutting, for laser, plasma, waterjet, router or knife cutting. Use when someone wants to nest parts, shares a drawing to nest or cut, fits shapes on sheet metal or other sheets, or asks how many sheets their parts need.
 ---
 
 # Nest parts with NestSolver
@@ -9,9 +9,10 @@ A nest runs in the background: start it, wait for it to finish, then read the pl
 
 ## 1. Find the parts
 
-- **Saved parts** come from DXF, DWG or SVG drawings imported in NestSolver's web app. Call `list_parts` (free) and match the names the person uses to the parts' labels. Each part's `id` goes in the nest's `library`.
+- **A drawing shared in the chat** (DXF, DWG or SVG): import it with `import_parts`, sending its `filename` and `content` (a DXF's or SVG's text, or a DWG's bytes in base64 with `encoding: "base64"`), and `unit` when the person says it. It saves every closed outline as a part and answers each part's `id`, size and holes; those ids go in the nest's `library`. Each call saves new parts, so import a drawing once.
+- **Saved parts** come from drawings imported before, here or in NestSolver's web app. Call `list_parts` (free) and match the names the person uses to the parts' labels. Each part's `id` goes in the nest's `library`.
 - **Rectangles and circles** can be typed by size instead, as `typed` rows.
-- If a part they name is not saved, say so: they can import the drawing in NestSolver's web app, under Presets, then Parts.
+- If a part they name is not saved, say so: they can share its drawing here, or import it in NestSolver's web app, under Presets, then Parts.
 
 ## 2. Start the nest
 

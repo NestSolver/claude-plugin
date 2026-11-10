@@ -1,7 +1,7 @@
 {
   "name": "nestsolver",
   "displayName": "NestSolver",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Plan cut lists for bars and sheets, true-shape nests, and pallet and truck loads with NestSolver, from a plain request.",
   "author": {
     "name": "NestSolver",
